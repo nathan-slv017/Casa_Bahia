@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.containerInicial{
+    display: grid;
+    grid: auto auto/ auto auto;
+    width: 1280px;
+    height: 107px;
+    border-color: rgb(231, 231, 231);
+}
+.logo_principal{
+    position: relative;
+    width: 300px;
+    background-color: aqua;
+    height: 107;
+}
+
+.logo_principal img{
+    position: relative;
+    top: 40%;
+    left: 15%;
+}
+
+.container_de_busca{
+    position: relative;
+    top: 0px;
+    background-color: rgb(202, 202, 218);
+    width: 1066px;
+    height: 100%;
+}
+.busca{
+    position: relative;
+    top: 40%;
+}
