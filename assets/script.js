@@ -1,35 +1,44 @@
 // Deus seja louvado
 
+document.addEventListener("click", (e) =>{
+    click(e)
+})
+
+function click(e){
+    return e.target;
+}
 function login() {
     document.querySelector(".login").addEventListener("mouseover", () => {
         document.querySelector(".fized").classList.remove("display")
     });
-    document.querySelector(".login").addEventListener("mouseover", () => {
+    document.querySelector(".fized").addEventListener("mouseover", () => {
         document.querySelector(".fized").classList.remove("display")
     });
-    document.querySelector(".login").addEventListener("mouseout", () =>{
+    document.querySelector(".login").addEventListener("mouseout", () => {
         document.querySelector(".fized").classList.add("display")
     });
-    document.querySelector(".fized").addEventListener("mouseout", () =>{
+    document.querySelector(".fized").addEventListener("mouseout", () => {
         document.querySelector(".fized").classList.add("display")
     });
 }
 let onOf = 0;
-setInterval(() =>{
-    if( onOf === 1){
+setInterval(() => {
+    if (onOf === 1) {
         document.querySelector(".cartaoCasasBahia").innerHTML = `<p>30X SEM JUROS</p>`
-        onOf --;
+        onOf--;
         return;
     }
 
-    if(onOf === 0){
+    if (onOf === 0) {
         document.querySelector(".cartaoCasasBahia").innerHTML = `<p> CARTÃO CASAS BAHIA </p>`
-        onOf ++;
+        onOf++;
         return;
     }
 }, 1600);
-login();
 
-function imagen(n){
+
+function imagen(n) {
     document.querySelector(".fotoPrincipal").innerHTML = `<img src="imagens/fotoIphone${n}.webp" alt="" width="400px">`
 }
+
+login();
