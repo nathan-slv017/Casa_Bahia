@@ -42,3 +42,18 @@ function imagen(n) {
 }
 
 login();
+
+document.querySelector(".parcelamento").addEventListener("click", () =>{
+    opcoesDeParcelamento()
+})
+
+function opcoesDeParcelamento(){
+    const divParcelamento = document.createElement("div");
+    divParcelamento.setAttribute("class", "tableDeParcelamento");
+    divParcelamento.innerHTML = `<div>Opções de parcelamento</div><button onclick="fecharParcelamento()">Fechar</button>`
+    document.querySelector("body").appendChild(divParcelamento);
+}
+
+function fecharParcelamento(){
+    document.querySelector(".tableDeParcelamento").remove();
+}
