@@ -244,8 +244,48 @@ h3{
 .tableDeParcelamento{
     width: 430px;
     height: 600px;
-    background-color: hotpink;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top: 12%;
     left: 33%;
+    padding: 0%;
+    border: 1px solid white;
+    border-radius: 1px;
+}
+#titulo{
+    background-color: #0033D1;
+    color: white;
+    padding: 15px;
+}
+#titulo h3{
+    display: inline-block;
+}
+#titulo button{
+    background-color: #0033D1;
+    border: none;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    font-weight: 900;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#parcela{
+    display: grid;
+    grid: auto auto/ auto auto;
+    justify-content: space-between;
+    text-align: end;
+    padding: 20px;
+}
+#parcela div{
+    margin: 10px;
+    color: rgb(87,87,87);
+}
+
+h5{
+    color: #0033D1;
+    margin-left: 130px;
+    font-size: 20px;
 }
