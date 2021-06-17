@@ -198,7 +198,8 @@ h3{
 }
 .botoes{
     position: absolute;
-    right: 100px;
+    left: 1000px;
+    
 }
 .botoes button{
     width: 200px;
@@ -288,4 +289,63 @@ h5{
     color: #0033D1;
     margin-left: 130px;
     font-size: 20px;
+}
+.botoes{
+
+}
+
+@media only screen and (max-width: 1020px){
+    .lembretes, .plus, .login, .links_laterais, .carrinho{
+        display: none;
+    }
+    .buscaTotal input{
+        width: 90%;
+    }
+    .carra_de_opcoes {
+        display: none;
+    }
+    .barraTres{
+        display: none;
+    }
+    .fotos_e_videos{
+        display: inline-block;
+    }
+
+    .fotoPrincipal{
+        display: inline-block;
+    }
+
+    .container_do_produto{
+        display: inline;
+    }
+    .botoes{
+        position: static;
+    }
+    body{
+        text-align: center;
+    }
+    .tableDeParcelamento{
+       width: 60%; 
+       height: 140%;
+    }
+    .parcela{
+        width: 100%;
+        height: 100%;
+
+    }
+    .parcela h5{
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .buscaTotal input {
+        display: none;
+    }
+    .buscaTotal button {
+        display: none;
+    }
+    .fotos_e_videos{
+        display: none;
+}
 }
